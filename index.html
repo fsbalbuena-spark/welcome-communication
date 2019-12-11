@@ -4,6 +4,19 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>A Simple Responsive HTML Email</title>
         <style type="text/css">
+            /**
+			* @tab Header
+			* @section header link
+			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+			*/
+			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#0767e2;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+			#headerImage{
+				height:auto;
+			}
             body {margin: 0; padding: 0; min-width: 100%!important;}
             .header-container{
                 padding: 78px 0 0 0;
@@ -84,7 +97,7 @@
             .people-box{
                 position: relative;
                 top:0;
-                left:0
+                left:0;
             }
             .people-image{
                 position: relative;
@@ -179,13 +192,25 @@
 
             a {color: #0767e2;}
 
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 600px){
                 .text-centered {
                     text-align:center !important;
                 };
+                .people-container{
+                    display:block !important;width: 360px !important;margin: 0 auto;
+                }
+            }
+            @media only screen and (max-width: 360px){
+                .people-container{
+                    display:block !important;
+                    width: 300px !important;
+                    margin: 0 auto;
+                    padding:0 0 0 0 !important
+                }
+            }
+            @media only screen and (min-width: 601px){
                 .people-box{
-                    min-height: 300px;
-                    border:1px solid red
+                    float: left !important;
                 }
             }
         </style>
@@ -196,29 +221,17 @@
                 <td>
                      <!-- CONTENT -->
                     <table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
-                            <tr>
-                                    <td style="position: absolute;" width="100%">
-                                        <table align="center" id="header-trama"></table>
-                                    </td>
-                            </tr>
-                         <!-- HEADER -->
                         <tr>
-                            <td>
-                                <table  class="header-container" align="left" border="0" cellspacing="0" cellpadding="0" >
+                            <td align="center" valign="top">
+                                <!-- BEGIN HEADER // -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                     <tr>
-                                        <td id="header-text-first" class="header-text">Our team continues to grow.</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="header-text">We have new members.</td>
-                                    </tr>
-                                </table>
-                                <table class="header-container" align="right" border="0" cellspacing="0" cellpadding="0"> 
-                                    <tr>
-                                        <td id="header-logo">
-                                            <img src="images/logo.png" id="logo" border="0" alt="Spark Digital" />
+                                        <td valign="top" class="headerContent">
+                                            <img src="images/Header.png" width="100%" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                         </td>
-                                    </tr>  
+                                    </tr>
                                 </table>
+                                <!-- // END HEADER -->
                             </td>
                         </tr>
                          <!-- END HEADER -->
@@ -244,7 +257,7 @@
                                     <tr>
                                         <td>
                                         <![endif]-->
-                                            <table width="265" class="people-box" align="left" cellpadding="0" cellspacing="0">  
+                                            <table width="265" class="people-box" align="center" cellpadding="0" cellspacing="0">  
                                                 <tr>
                                                     <td>
                                                         <img src="images/TMP-Gina.jpg"
@@ -271,7 +284,7 @@
                                     <tr>
                                         <td>
                                         <![endif]-->
-                                            <table width="265" class="people-box" align="left" class="text-centered" cellpadding="0" cellspacing="0" >    
+                                            <table width="265" class="people-box"  align="center" class="text-centered" cellpadding="0" cellspacing="0" >    
                                                 <tr>
                                                     <td>
                                                         <table class="icons-container">
@@ -320,7 +333,7 @@
                                     <tr>
                                         <td>
                                         <![endif]-->
-                                            <table width="265" class="people-box" align="left" class="text-centered" cellpadding="0" cellspacing="0" >    
+                                            <table width="265" class="people-box" align="center" class="text-centered" cellpadding="0" cellspacing="0" >    
                                                 <tr>
                                                     <td>
                                                             <table class="icons-container">
@@ -364,7 +377,7 @@
                                     <tr>
                                         <td>
                                         <![endif]-->
-                                        <table width="265" class="people-box" align="left" cellpadding="0" cellspacing="0">  
+                                        <table width="265" class="people-box" align="center" cellpadding="0" cellspacing="0">  
                                                 <tr>
                                                     <td>
                                                         <img src="images/TMP-Sergio.jpg"
