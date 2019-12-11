@@ -207,6 +207,9 @@
                     margin: 0 auto;
                     padding:0 0 0 0 !important
                 }
+                .image-box{
+                    width:230px !important
+                }
             }
             @media only screen and (min-width: 601px){
                 .people-box{
@@ -250,17 +253,18 @@
                         </tr>
                         <!-- END TITLE-->
                         <!-- SECTION A -->
-                        <tr>
+                        <tr mc:repeatable>
                             <td class="people-container"  >        
                                 <!--[if (gte mso 9)|(IE)]>
                                 <table width="277" align="left" cellpadding="0" cellspacing="0" border="0">
                                     <tr>
                                         <td>
                                         <![endif]-->
-                                            <table width="265" class="people-box" align="center" cellpadding="0" cellspacing="0">  
+                                            <table width="265" class="people-box image-box" align="center" cellpadding="0" cellspacing="0">  
                                                 <tr>
                                                     <td>
                                                         <img src="images/TMP-Gina.jpg"
+                                                        mc:label="first_column_image" mc:edit="first_column_image"
                                                         class="people-image">
                                                     </td>
                                                 </tr>
@@ -268,10 +272,172 @@
                                                     <td><div class="rectangle"></div></td>
                                                 </tr>
                                                 <tr>
-                                                    <td ><p class="body-text people-name">GINA CARBALLEIRA</p></td>
+                                                    <td ><p class="body-text people-name" mc:edit="first_column_name">GINA CARBALLEIRA</p></td>
                                                 </tr>
                                                 <tr>
-                                                    <td ><p class="body-text people-brief">UX Designer at MacMillan, pushing pixels from Buenos Aires, Argentina.</p></td>
+                                                    <td ><p class="body-text people-brief" mc:edit="first_column_brief">UX Designer at MacMillan, pushing pixels from Buenos Aires, Argentina.</p></td>
+                                                </tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <![endif]-->
+                               <!--[if (gte mso 9)|(IE)]>
+                                <table width="302" align="left" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td>
+                                        <![endif]-->
+                                            <table width="265" class="people-box"  align="center" class="text-centered" cellpadding="0" cellspacing="0" >    
+                                                <tr>
+                                                    <td>
+                                                        <table class="icons-container">
+                                                            <tr>
+                                                                <td >
+                                                                    <img class="icons" src="images/ico-camera.png"
+                                                                    mc:label="first_column_icon_1" mc:edit="first_column_icon_1">
+                                                                </td >
+                                                                <td >
+                                                                    <img class="icons" src="images/ico-heart.png"
+                                                                    mc:label="first_column_icon_2" mc:edit="first_column_icon_2">
+                                                                </td >
+                                                                <td >
+                                                                    <img class="icons" src="images/ico-picture.png"
+                                                                    mc:label="first_column_icon_3" mc:edit="first_column_icon_3">
+                                                                </td >
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td  >
+                                                        <p class="body-text people-description" mc:edit="first_column_description">
+                                                            Hi! I`m Georgina but all my friends call me Gina. I love travelling and taking pictures around the world
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                     <td class="connect body-text">
+                                                         <p mc:edit="first_column_connect">
+                                                             Want to connect? <a class="connect-link" href="#"> Say Cheese!</a>
+                                                         </p>
+                                                     </td>
+                                                </tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                        <!-- END SECTION A -->
+                        <!-- SECTION B -->
+                        <tr>
+                            <td class="people-container"  >        
+                               <!--[if (gte mso 9)|(IE)]>
+                                <table width="302" align="left" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td>
+                                        <![endif]-->
+                                            <table width="265" class="people-box" align="center" class="text-centered" cellpadding="0" cellspacing="0" >    
+                                                <tr>
+                                                    <td>
+                                                            <table class="icons-container">
+                                                                    <tr>
+                                                                        <td >
+                                                                            <img class="icons" src="images/ico-basketball-orange.png"
+                                                                            >
+                                                                        </td >
+                                                                        <td >
+                                                                            <img class="icons" src="images/ico-heart-orange.png"
+                                                                            >
+                                                                        </td >
+                                                                        <td >
+                                                                            <img class="icons" src="images/ico-book-orange.png"
+                                                                            >
+                                                                        </td >
+                                                                    </tr>
+                                                                </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td  >
+                                                        <p class="body-text people-description">
+                                                                Hey, I’m Sergio, the designer formerly known as Serchux. 
+                                                                I love to play basketball and I'm an avid reader of novels. 
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                     <td class="connect body-text" >
+                                                         <p >
+                                                             Want to connect? <a class="connect-link second" href="#"> Ask for a bigger Logo</a>
+                                                         </p>
+                                                     </td>
+                                                </tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <![endif]-->
+                                 <!--[if (gte mso 9)|(IE)]>
+                                <table width="277" align="left" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td>
+                                        <![endif]-->
+                                        <table width="265" class="people-box image-box" align="center" cellpadding="0" cellspacing="0">  
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/TMP-Sergio.jpg"
+                                                        class="people-image">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="rectangle second"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><p class="body-text people-name">SERGIO RODRÍGUEZ </p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><p class="body-text people-brief">UX DESIGNER AT KAPLAN team,
+                                                            pushing pixels from Buenos Aires, Argentina.</p></td>
+                                                </tr>
+                                            </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                            <!-- END SECTION B -->
+                        
+                        <!-- SECTION C -->
+                        <tr>
+                            <td class="people-container"  >        
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table width="277" align="left" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td>
+                                        <![endif]-->
+                                            <table width="265" class="people-box image-box" align="center" cellpadding="0" cellspacing="0">  
+                                                <tr>
+                                                    <td>
+                                                        <img src="images/TMP-Ale.jpg"
+                                                        class="people-image">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="rectangle"></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><p class="body-text people-name">Alejandro Rao</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><p class="body-text people-brief">UX DESIGNER AT KAPLAN team,
+                                                        pushing pixels from Buenos Aires, Argentina</p></td>
                                                 </tr>
                                             </table>
                                         <!--[if (gte mso 9)|(IE)]>
@@ -305,14 +471,14 @@
                                                 <tr>
                                                     <td  >
                                                         <p class="body-text people-description">
-                                                            Hi! I`m Georgina but all my friends call me Gina. I love travelling and taking pictures around the world
+                                                            There is nothing better than a rainy day. I love listening to rock music though I never miss the chance to dance cumbia. 
                                                         </p>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                      <td class="connect body-text">
                                                          <p >
-                                                             Want to connect? <a class="connect-link" href="#"> Say Cheese!</a>
+                                                             Want to connect? <a class="connect-link" href="#"> Invite him to dance</a>
                                                          </p>
                                                      </td>
                                                 </tr>
@@ -324,91 +490,7 @@
                                 <![endif]-->
                             </td>
                         </tr>
-                        <!-- END SECTION A -->
-                        <!-- SECTION B -->
-                        <tr>
-                            <td class="people-container"  >        
-                               <!--[if (gte mso 9)|(IE)]>
-                                <table width="302" align="left" cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                        <td>
-                                        <![endif]-->
-                                            <table width="265" class="people-box" align="center" class="text-centered" cellpadding="0" cellspacing="0" >    
-                                                <tr>
-                                                    <td>
-                                                            <table class="icons-container">
-                                                                    <tr>
-                                                                        <td >
-                                                                            <img class="icons" src="images/ico-basketball-orange.png">
-                                                                        </td >
-                                                                        <td >
-                                                                            <img class="icons" src="images/ico-heart-orange.png">
-                                                                        </td >
-                                                                        <td >
-                                                                            <img class="icons" src="images/ico-book-orange.png">
-                                                                        </td >
-                                                                    </tr>
-                                                                </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td  >
-                                                        <p class="body-text people-description">
-                                                                Hey, I’m Sergio, the designer formerly known as Serchux. 
-                                                                I love to play basketball and I'm an avid reader of novels. 
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                     <td class="connect body-text" >
-                                                         <p >
-                                                             Want to connect? <a class="connect-link second" href="#"> Ask for a bigger Logo</a>
-                                                         </p>
-                                                     </td>
-                                                </tr>
-                                            </table>
-                                        <!--[if (gte mso 9)|(IE)]>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <![endif]-->
-                                 <!--[if (gte mso 9)|(IE)]>
-                                <table width="277" align="left" cellpadding="0" cellspacing="0" border="0">
-                                    <tr>
-                                        <td>
-                                        <![endif]-->
-                                        <table width="265" class="people-box" align="center" cellpadding="0" cellspacing="0">  
-                                                <tr>
-                                                    <td>
-                                                        <img src="images/TMP-Sergio.jpg"
-                                                        class="people-image">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><div class="rectangle second"></div></td>
-                                                </tr>
-                                                <tr>
-                                                    <td ><p class="body-text people-name">SERGIO RODRÍGUEZ </p></td>
-                                                </tr>
-                                                <tr>
-                                                    <td ><p class="body-text people-brief">UX DESIGNER AT KAPLAN team,
-                                                            pushing pixels from Buenos Aires, Argentina.</p></td>
-                                                </tr>
-                                            </table>
-                                        <!--[if (gte mso 9)|(IE)]>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <![endif]-->
-                            </td>
-                        </tr>
-                            <!-- END SECTION B -->
-
-                        <!-- SECTION B -->
-                        
-                        <!-- END SECTION B -->
-                        
-                        
+                        <!-- END SECTION C -->               
                             <!-- FOOTER -->
                             <tr>
                                 <td>
@@ -429,16 +511,16 @@
                                                 <table class="icons-container" align="center">
                                                         <tr>
                                                             <td >
-                                                                <a href="#" ><img class="icons footer" src="images/fb-icon.png"></a>
+                                                                <a href="*|FACEBOOK:PROFILEURL|*" ><img class="icons footer" src="images/fb-icon.png"></a>
                                                             </td >
                                                             <td >
-                                                                <a href="#" ><img class="icons footer" src="images/twitter-icon.png"></a>
+                                                                <a href="*|TWITTER:PROFILEURL|*" ><img class="icons footer" src="images/twitter-icon.png"></a>
                                                             </td >
                                                             <td >
-                                                                <a href="#" ><img class="icons footer" src="images/insta-icon.png"></a>
+                                                                <a href="*|INSTAGRAM:PROFILEURL|*" ><img class="icons footer" src="images/insta-icon.png"></a>
                                                             </td >
                                                             <td >
-                                                                <a href="#" ><img class="icons footer" src="images/linkedin-icon.png"></a>
+                                                                <a href="*|LINKEDIN:PROFILEURL|*" ><img class="icons footer" src="images/linkedin-icon.png"></a>
                                                             </td >
                                                         </tr>
                                                     </table>
