@@ -18,23 +18,6 @@
 				height:auto;
 			}
             body {margin: 0; padding: 0; min-width: 100%!important;}
-            .header-container{
-                padding: 78px 0 0 0;
-                position: relative;
-                top: 0;
-                left: 0;
-                width: 50%;
-            }
-            #header-logo{
-                position: absolute;
-                top:76px;
-                right:30px
-            }
-            #logo{
-                width: 120px;
-                height: 46.8px;
-                object-fit: contain;
-            }
             .header-text{
                 position: relative;
                 top:0;
@@ -253,7 +236,7 @@
                         </tr>
                         <!-- END TITLE-->
                         <!-- SECTION A -->
-                        <tr mc:repeatable>
+                        <tr mc:repeatable="people" mc:variant="people-1" >
                             <td class="people-container"  >        
                                 <!--[if (gte mso 9)|(IE)]>
                                 <table width="277" align="left" cellpadding="0" cellspacing="0" border="0">
@@ -333,7 +316,7 @@
                         </tr>
                         <!-- END SECTION A -->
                         <!-- SECTION B -->
-                        <tr mc:repeatable>
+                        <tr mc:repeatable="people" mc:variant="people-2">
                             <td class="people-container"  >        
                                <!--[if (gte mso 9)|(IE)]>
                                 <table width="302" align="left" cellpadding="0" cellspacing="0" border="0">
@@ -416,7 +399,7 @@
                             <!-- END SECTION B -->
                         
                         <!-- SECTION C -->
-                        <tr mc:repeatable>
+                        <tr mc:repeatable="people" mc:variant="people-3">
                             <td class="people-container"  >        
                                 <!--[if (gte mso 9)|(IE)]>
                                 <table width="277" align="left" cellpadding="0" cellspacing="0" border="0">
@@ -499,7 +482,6 @@
                             <!-- FOOTER -->
                             <tr>
                                 <td>
-                                    <!-- footer -->
                                     <table width="100%" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
                                         <tr>
                                           <td style="padding:0;text-align:center;">
@@ -516,16 +498,16 @@
                                                 <table class="icons-container" align="center">
                                                         <tr>
                                                             <td >
-                                                                <a href="*|FACEBOOK:PROFILEURL|*" ><img class="icons footer" src="images/fb-icon.png"></a>
+                                                                <a href="https://www.facebook.com/SparkDigitalSocial/" ><img class="icons footer" src="images/fb-icon.png"></a>
                                                             </td >
                                                             <td >
                                                                 <a href="*|TWITTER:PROFILEURL|*" ><img class="icons footer" src="images/twitter-icon.png"></a>
                                                             </td >
                                                             <td >
-                                                                <a href="*|INSTAGRAM:PROFILEURL|*" ><img class="icons footer" src="images/insta-icon.png"></a>
+                                                                <a href="https://www.instagram.com/sparkdigitalok" ><img class="icons footer" src="images/insta-icon.png"></a>
                                                             </td >
                                                             <td >
-                                                                <a href="*|LINKEDIN:PROFILEURL|*" ><img class="icons footer" src="images/linkedin-icon.png"></a>
+                                                                <a href="https://www.linkedin.com/company/sparkdigital" ><img class="icons footer" src="images/linkedin-icon.png"></a>
                                                             </td >
                                                         </tr>
                                                     </table>
@@ -547,7 +529,6 @@
                                           </td>
                                         </tr>
                                     </table>
-                      <!-- ENDS footer -->
                                 </td>
                             </tr>
                             <!-- END FOOTER -->
